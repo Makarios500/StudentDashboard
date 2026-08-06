@@ -21,7 +21,7 @@ const studentDetails = () => {
 };
 
 const toDashboard = () => {
-  window.open("/data.html")
+  window.open("data.html")
 };
 
 const openModal = () => {
