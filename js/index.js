@@ -21,7 +21,8 @@ const studentDetails = () => {
 };
 
 const toDashboard = () => {
-  window.location.href="data.html";
+  const base = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+  window.location.href = base + "data.html";
 };
 
 const openModal = () => {
