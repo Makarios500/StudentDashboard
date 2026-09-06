@@ -1,1 +1,3 @@
-Demo Credentials: Email: user@gmail.com Password: 1234
+Demo Credentials :
+Email: user@gmail.com ,
+Password: 1234
