@@ -7,6 +7,7 @@ const fields = ["Name", "Age", "Department", "Email"];
 
 const studentDetails = () => {
   let obj = {};
+  const dashboard = JSON.parse(localStorage.getItem("students")) || [];
 
   fields.forEach((el, index) => {
     obj[el] = values[index].value;

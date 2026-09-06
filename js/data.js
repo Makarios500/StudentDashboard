@@ -2,6 +2,7 @@ const dashboard = JSON.parse(localStorage.getItem("students")) || [];
 let table = document.querySelector("tbody");
 
 const userData = () => {
+  table.innerHTML = "";
   dashboard.forEach((el, index) => {
     table.innerHTML += `
          <tr>
@@ -20,10 +21,10 @@ const userData = () => {
           </tr>`;
   });
 };
+userData();
 
 const deleteAitem = (index) => {
   dashboard.splice(index, 1);
   localStorage.setItem("students", JSON.stringify(dashboard));
+  userData();
 };
-
-userData();
